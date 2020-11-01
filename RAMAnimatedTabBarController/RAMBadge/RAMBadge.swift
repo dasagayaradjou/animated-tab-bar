@@ -34,7 +34,7 @@ open class RAMBadge: UILabel {
     public override init(frame: CGRect) {
         super.init(frame: frame)
 
-        layer.backgroundColor = UIColor.red.cgColor
+        layer.backgroundColor = UIColor.clear.cgColor
         layer.cornerRadius = frame.size.width / 2
 
         configureNumberLabel()
@@ -82,7 +82,7 @@ open class RAMBadge: UILabel {
     fileprivate func configureNumberLabel() {
         textAlignment = .center
         font = .systemFont(ofSize: 13)
-        textColor = .white
+        textColor = .red
     }
 
     // PRAGMA: public
